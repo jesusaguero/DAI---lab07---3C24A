@@ -4,24 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar Autor</title>
+    <title>Agregar Libro</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
-        <h1>Nuevo Autor</h1>
-        <form name="formAutor" method="post" action="agregar_autor.php">
+        <h1>Nuevo Libro</h1>
+        <form name="formLibro" method="post" action="agregar_libro.php">
             <div class="form-group">
-                <label for="nombres">Nombres:</label>
+                <label for="titulo">Titulo:</label>
+                <input type="text" class="form-control" id="titulo" name="titulo" required>
+            </div>
+            <div class="form-group">
+                <label for="nombres">Autor:</label>
                 <input type="text" class="form-control" id="nombres" name="nombres" required>
             </div>
             <div class="form-group">
-                <label for="ape_paterno">Apellido Paterno:</label>
-                <input type="text" class="form-control" id="ape_paterno" name="ape_paterno" required>
+                <label for="anio">Año:</label>
+                <input type="text" class="form-control" id="anio" name="anio" required>
             </div>
             <div class="form-group">
-                <label for="ape_materno">Apellido Materno:</label>
-                <input type="text" class="form-control" id="ape_materno" name="ape_materno">
+                <label for="especialidad">Especialidad:</label>
+                <input type="text" class="form-control" id="especialidad" name="especialidad" required>
+            </div>
+            <div class="form-group">
+                <label for="editorial">Editorial:</label>
+                <input type="text" class="form-control" id="editorial" name="editorial" required>
+            </div>
+            <div class="form-group">
+                <label for="enlace">URL:</label>
+                <input type="text" class="form-control" id="enlace" name="enlace" required>
             </div>
             <button type="submit" class="btn btn-primary">Guardar</button>
         </form>
